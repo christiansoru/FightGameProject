@@ -11,4 +11,8 @@ public class Move {
         this.type = type;
     }
 
+    public String toString() {
+        return String.format("Name: %s, Power: %d, Tipo: %s ",name, power, type);
+    }
+
 }

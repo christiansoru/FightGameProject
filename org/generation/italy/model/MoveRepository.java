@@ -14,6 +14,8 @@ public class MoveRepository{
     }
     
 
-
+    public List<Move> getMoves(){
+        return moves;
+    }
 
 }
