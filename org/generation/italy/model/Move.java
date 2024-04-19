@@ -12,7 +12,10 @@ public class Move {
     }
 
     public String toString() {
-        return String.format("Name: %s, Power: %d, Tipo: %s ",name, power, type);
+        return String.format("Move: %s, Power: %d, Tipo: %s ",name, power, type);
     }
 
+    public int getPower(){
+        return power;
+    }
 }

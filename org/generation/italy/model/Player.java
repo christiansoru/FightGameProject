@@ -30,37 +30,25 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Character {
+public class Player {
     private String name;
-    private List<Move> moves;
     private int hp;
+    private MoveRepository moveRepo;
 
-    public Character(String name){
+    public Player(String name){
         this.name = name;
-        this.moves = new ArrayList<>();
-        this.hp = 100;
+        this.hp = 100; 
     }
 
     public String getName(){
         return name;
     }
 
-    public List<Move> getMoves(){
-        return moves;
-    }
-
     public int getHp(){
         return hp;
     }
-
-    public boolean isHit(Character c2){
-        Random random = new Random();
-        double percentage = random.nextInt(3);
-        if(percentage == 1){
-            c2.hp -= 15;
-            return true;
-        }
-        return false; 
-    }
   
+    public void setHp(int hp){
+        this.hp = hp;
+    }
 }
